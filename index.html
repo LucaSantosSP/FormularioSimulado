@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body> 
+    <form action=""> 
+        <h1>Lista de jogos</h1>
+        <h2> Adicione um jogo </h2>
+        <label for="iNome">Título: </label>
+        <input type="text" id="iNome" name="nNome"><br>
+
+        <label for="iGenero">Gênero: </label>
+        <select name="nGenero" id="iGenero">
+            <option value="acao">           Ação</option>
+            <option value="aventura">       Aventura</option>
+            <option value="RPG">            RPG</option>
+            <option value="simulacao">      Simulação</option>
+            <option value="puzzle">         Puzzle</option>
+            <option value="esportes">       Esportes</option>
+            <option value="estrategia">     Estratégia</option>
+            <option value="sobrevivencia">  Sobrevivência</option>
+        </select><br>
+
+        <label for="iDesen">Desenvolvedora: </label>
+        <input type="text" id="iDesen" name="nDesen"><br>
+
+        <label for="iData">Data de lançamento: </label>
+        <input type="date" name="nData" id="iData"><br>
+
+        <label for="iDesc">Descrição: </label>
+        <textarea name="nDesc" id="iDesc" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>
