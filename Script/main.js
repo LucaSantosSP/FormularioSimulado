@@ -1,5 +1,6 @@
 var tabela;
 
+
 function criarTB(jogo){
     var tabela = document.getElementById("tGames");
     var qtLinhas = tabela.rows.length;
@@ -88,9 +89,11 @@ function deletarDados(linha){
 function atualizaDados(essaLinha){
     var tabela = document.getElementById("tGames");
     for(var i = 0; i < tabela.rows.length; i++){
-        tabela.rows[essaLinha].cells[1].innerHTML = document.getElementById('iNome').value;
-        tabela.rows[essaLinha].cells[2].innerHTML = document.getElementById('iGenero').value;
-        tabela.rows[essaLinha].cells[3].innerHTML = document.getElementById('iDesen').value;
-        tabela.rows[essaLinha].cells[4].innerHTML = document.getElementById('iData').value;
+        if(validar() == true){
+            tabela.rows[essaLinha].cells[1].innerHTML = document.getElementById('iNome').value;
+            tabela.rows[essaLinha].cells[2].innerHTML = document.getElementById('iGenero').value;
+            tabela.rows[essaLinha].cells[3].innerHTML = document.getElementById('iDesen').value;
+            tabela.rows[essaLinha].cells[4].innerHTML = document.getElementById('iData').value;
+        }
     }
 }
