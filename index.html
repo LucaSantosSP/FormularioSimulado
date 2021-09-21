@@ -5,35 +5,53 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="Script/main.js"></script>
 </head>
 
 <body> 
-    <form action=""> 
-        <h1>Lista de jogos</h1>
-        <h2> Adicione um jogo </h2>
-        <label for="iNome">Título: </label>
-        <input type="text" id="iNome" name="nNome"><br>
+    <form action="" name="formname" onsubmit="return false" id="myForm"> 
+        <div id="insereD">
+            <h1>Jogos Eletrônicos</h1>
 
-        <label for="iGenero">Gênero: </label>
-        <select name="nGenero" id="iGenero">
-            <option value="acao">           Ação</option>
-            <option value="aventura">       Aventura</option>
-            <option value="RPG">            RPG</option>
-            <option value="simulacao">      Simulação</option>
-            <option value="puzzle">         Puzzle</option>
-            <option value="esportes">       Esportes</option>
-            <option value="estrategia">     Estratégia</option>
-            <option value="sobrevivencia">  Sobrevivência</option>
-        </select><br>
+            <label for="iCodigo">Código: </label><br>
+            <input type="text" id="iCodigo" name="nCodigo" disabled style="width: 97%;"><br>
 
-        <label for="iDesen">Desenvolvedora: </label>
-        <input type="text" id="iDesen" name="nDesen"><br>
+            <label for="iNome">Título: </label><br>
+            <input type="text" id="iNome" name="nNome" required placeholder="Insira o nome do jogo" style="width: 97%;"><br>
 
-        <label for="iData">Data de lançamento: </label>
-        <input type="date" name="nData" id="iData"><br>
+            <label for="iDesen">Desenvolvedora: </label><br>
+            <input type="text" id="iDesen" name="nDesen" required placeholder="Insira o nome da desenvolvedora"  style="width: 97%;"><br>
 
-        <label for="iDesc">Descrição: </label>
-        <textarea name="nDesc" id="iDesc" cols="30" rows="10"></textarea>
+            <label for="iGenero">Gênero: </label><br>
+            <select name="nGenero" id="iGenero">
+                <option value="acao">           Ação</option>
+                <option value="aventura">       Aventura</option>
+                <option value="RPG">            RPG</option>
+                <option value="simulacao">      Simulação</option>
+                <option value="puzzle">         Puzzle</option>
+                <option value="esportes">       Esportes</option>
+                <option value="estrategia">     Estratégia</option>
+                <option value="sobrevivencia">  Sobrevivência</option>
+            </select><br>
+
+            <label for="iData">Data de lançamento: </label><br>
+            <input type="date" name="nData" id="iData" required><br>
+
+            <div id="btnPrincipal">            
+                <button onclick="chamarTB()" onclick="chamaB()" id="btn"> Adicionar </button> <button onclick="limparCampos()"> Descartar </button>
+            </div>
+        </div>
+        
+        <table id="tGames">
+            <tr>
+                <th>Código</th>
+                <th>Título</th>
+                <th>Gênero</th>
+                <th>Desenvolvedora</th>
+                <th>Lançamento</th>
+            </tr>
+        </table>
     </form>
 </body>
 </html>

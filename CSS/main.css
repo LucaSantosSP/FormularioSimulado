@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: linear-gradient(to top, #f06515, #ff7301);
+    color: cornsilk;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+form{
+    margin: 0 20% 15px 20%;
+    padding-top: 15px;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ff5e00;
+}
+
+input, select{
+    padding: 10px;
+    margin: 5px;
+}
+
+button{
+    padding: 7px;
+    margin: 10px 5px 10px 5px;
+    background-color: #ff6c17;
+    border-radius: 4px;
+    border-style: outset;
+    border-color: #ff7300;
+}
+
+#btnPrincipal{
+    margin: 0 0% 0 40%;
+}
+
+button:active{
+    background-color: #c44800;
+    border-color: #c44800;
+}
+
+.btnDel{
+    background-color: #ff1717;
+    border-color: #c40000;
+    color: #FFFFFF;
+}
+
+.btnAtt{
+    background-color: #10b326;
+    border-color: #1d9100;
+    color: #FFFFFF;
+}
+
+#insereD{
+    background-color: #FFFFFF;
+    color: black;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+table{
+    border: 2px solid rgb(255, 255, 255);
+    margin-left: 4%;
+    margin-top: 2px;
+    width: 92%;
+}
+
+td, th{
+    border: 2px solid rgb(255, 255, 255);
+    max-width: 200%;
+    text-align: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+@media (max-width: 900px) {
+    form{
+        margin: 0 0 15px 0;
+    }
+
+    #insereD{
+        border-radius: 0;
+    }
+
+    table{
+        border: 2px solid rgb(255, 255, 255);
+        margin-left: 0;
+        margin-top: 2px;
+        width: 100%;
+    } 
+}
